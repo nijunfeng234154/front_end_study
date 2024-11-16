@@ -3,14 +3,74 @@
     padding:0;
     margin:0;
 }
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.html,.body{
+    height: 100vh;
+    width: 100vh;
+    background-image:'123.gif';
+    background-size: cover;
+}
 .setflex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    justify-content: flex-end;
 }
-
+header{
+    background-color: #333;
+    padding:10px;
+}
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 10px;
+    border-radius:8px;
+    transition: 0.2s ease-in-out;
+    cursor:pointer;
+}
+li:hover{
+    box-shadow: 0px 0px 20px black;
+}
+.content{
+    height:calc(100vh - 70px);
+}
+.content .inner{
+    padding: 10px;
+    background-color: skyblue;
+    margin: auto;
+}
+.content .inner .item{
+    cursor:pointer;
+    margin:0 10px;
+    transition: 0.2s ease-in-out;
+    flex-flow: column;
+    justify-content:space-evenly;
+}
+.inner .item:hover{
+    box-shadow: 0px 0px 20px black;
+}
+.inner :nth-child(1){
+    background-color: orange;
+}
+.inner :nth-child(2){
+    background-color: orange;
+}
+.inner :nth-child(3){
+    background-color: orange;
+}
+.inner :nth-child(4){
+    background-color: orange;
+}
+.inner :nth-child(5){
+    background-color: orange;
+}
+/* 写子元素classname时候注意指定父元素 */
+.inner .item{
+    width:180px;
+    height:200px;
+}
